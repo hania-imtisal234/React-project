@@ -1,0 +1,24 @@
+.cards{
+    height:202px;
+    width:154px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.photo{
+    height:158px;
+    background-color:#F5F6F8;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.logo{
+    height:158px;
+}
+
+h4{
+    height:44px;
+    color:black;
+    font-size:10px;
+    text-align: center;
+}
