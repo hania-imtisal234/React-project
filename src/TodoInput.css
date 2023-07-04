@@ -1,0 +1,40 @@
+.Todolist__label{
+  color:black;
+}
+.Todolist__inputfield
+{
+    width:350px;
+    height:45px;
+    margin-top: 15px;
+    margin-left:10px;
+    margin-right:10px;
+    padding-left:15px;
+}
+.TodoList__button
+{
+    width:370px;
+    height:45px;
+    background-color: #007DEC;
+    border-color: #007DEC;
+    border-radius:5px;
+    text-align: center;
+    color:#FFFFFF;
+    font-weight:bold;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left:10px;
+    margin-right:10px;
+    padding-left:15px;
+}
+
+.TodoList__list
+{
+    width:350px;
+    height:45px;
+    margin-top: 15px;
+    margin-left:10px;
+    margin-right:10px;
+    padding-left:15px;
+    border-color: black;
+
+}

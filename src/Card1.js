@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import './Card1.css'
 import img1 from './imgs/user.jpg'
 
-function Card1({cardName="Amir"}) {
- 
+function Card1({cardName}) {
+
+
     return (
       <div class="cards">
         <div class="photo">
@@ -13,7 +15,7 @@ function Card1({cardName="Amir"}) {
         <div class="name">
            <h4>{cardName}</h4>
         </div>
-      
+        <button  >Click me</button>
       </div>
     );
   }
