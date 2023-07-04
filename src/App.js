@@ -2,8 +2,24 @@ import logo from './logo.svg';
 import './App.css';
 import Form from './Form.js';
 import RecentLogins from './RecentLogins';
+import { useState } from 'react';
+import TodoInput from './TodoInput';
+import TodoList from './TodoList';
 
 function App() {
+
+  const[list,setlist]= useState([]);
+  let addlist = (input)=>
+    {
+     setlist([...list,input]);
+    }
+
+    const deleteListItem = (key)=>
+    {
+      let newlist = [...list];
+      newlist.splice(key,1);
+      setlist ([...newlist]);
+    }
   return (
     <div className="App">
       <header className="App-header">
@@ -19,17 +35,24 @@ function App() {
         <div class="label1">
           <p><temp>Create a Page</temp> for a celebrity,brand or business.</p>
         </div>
-      </header>
 
-      <footer className='App-footer'>
-         <div class="languages">
-          <p>English (UK)   اردو 
-پښتو  العربية    हिन्दी   বাংলা   ਪੰਜਾਬੀ  فارسی  ગુજરાતી  Deutsch  Español  
-          </p>
+ 
+        <div className='TodoListComponent'>
+         <div className="TodoListInput">
+          <TodoInput addlist={addlist}/>
+          <h2 className='TodoList-label'>To Do List</h2>
+          <hr className='line'></hr>
+          {list.map((listItem,i)=>{
+              return(<TodoList key={i} index={i} item={listItem} deleteItem={deleteListItem}/>);
+            })}
+          
          </div>
           
-          
-      </footer>
+      </div>
+
+      </header>
+
+      
     </div>
   );
 }

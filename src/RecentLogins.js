@@ -2,8 +2,13 @@ import './RecentLogins.css'
 import Card1 from './Card1';
 import img1 from './imgs/user.jpg'
 import Card2 from './Card2';
+import { useState } from 'react';
 
 function RecentLogins() {
+  const [cardName, setCardName] = useState("Amir")
+
+  
+
     return (
       <div class="logins">
         <div class="header">
@@ -14,7 +19,7 @@ function RecentLogins() {
 
         <div class = "accounts">
             <div class="row">
-                <Card1 />
+                <Card1 cardName={cardName}/>
                 <Card2 />
                 
             </div>

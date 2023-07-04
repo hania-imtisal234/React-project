@@ -36,23 +36,16 @@ temp{
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-footer{
-  color:white;
-  height:127px;
-  
+.TodoListComponent{
+  width:350px;
 }
 
-.other{
-  padding-left:200px;
-  width:1000px;
-  text-align: center;
-  color:#898B8A;
+.TodoList-label{
+  color:black;
 }
-
-.footer-labels{
-  color:#898B8A;
-  text-align: center;
+.line{
+  margin-left:20px;
+  margin-top:-20px;
 }
 .App-header {
   background-color: #F1F2F6;
