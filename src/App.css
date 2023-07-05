@@ -31,6 +31,18 @@ p{
 temp{
   font-weight:bold;
 }
+
+.tasks{
+  display:flex;
+}
+.Input-state-props{
+   height:250px;
+}
+.Conditional-Rendering{
+  height:250px;
+  margin-left:50px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

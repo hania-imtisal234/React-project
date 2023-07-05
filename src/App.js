@@ -5,6 +5,8 @@ import RecentLogins from './RecentLogins';
 import { useState } from 'react';
 import TodoInput from './TodoInput';
 import TodoList from './TodoList';
+import Task1 from './Task1';
+import Task2 from './Task2';
 
 function App() {
 
@@ -20,6 +22,9 @@ function App() {
       newlist.splice(key,1);
       setlist ([...newlist]);
     }
+
+    const[name,setname] =useState('');
+    
   return (
     <div className="App">
       <header className="App-header">
@@ -35,6 +40,17 @@ function App() {
         <div class="label1">
           <p><temp>Create a Page</temp> for a celebrity,brand or business.</p>
         </div>
+       
+        <div className='tasks'>
+          <div className='Input-state-props'> 
+             <Task1/>
+          </div>
+
+          <div className='Conditional-Rendering'>
+            <Task2 />
+          </div>
+        </div>
+        
 
  
         <div className='TodoListComponent'>
@@ -51,7 +67,6 @@ function App() {
       </div>
 
       </header>
-
       
     </div>
   );

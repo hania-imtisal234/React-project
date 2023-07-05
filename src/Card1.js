@@ -15,7 +15,7 @@ function Card1({cardName}) {
         <div class="name">
            <h4>{cardName}</h4>
         </div>
-        <button  >Click me</button>
+       
       </div>
     );
   }
