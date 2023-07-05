@@ -1,20 +1,22 @@
-import React from 'react'
-import './TodoList.css'
+import React from "react";
+import "./TodoList.css";
 
-
-const TodoList=(props)=> {
+const TodoList = (props) => {
   return (
-    <div className='List-item-Table'>
-    <div className='list-item'>
-    <input className='list-item-box' value={props.item}></input>
-    <button onClick={()=>{
-                    props.deleteItem(props.index)
-                }} className='list-item-delete-btn'>x</button>
-    
-    
+    <div className="List-item-Table">
+      <div className="list-item">
+        <input className="list-item-box" value={props.item}></input>
+        <button
+          onClick={() => {
+            props.deleteItem(props.index);
+          }}
+          className="list-item-delete-btn"
+        >
+          x
+        </button>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default TodoList
+export default TodoList;

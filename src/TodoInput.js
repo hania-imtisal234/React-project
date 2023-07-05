@@ -1,34 +1,38 @@
-import './TodoInput.css'
-import { useState } from 'react';
+import "./TodoInput.css";
+import { useState } from "react";
 
-const TodoInput=(props) =>{
+const TodoInput = (props) => {
+  const [input, setinput] = useState(null);
 
-    const[input,setinput]= useState(null);
-    
+  const getInput = (event) => {
+    setinput(event.target.value);
+  };
 
-    const getInput=(event)=>{
-          setinput(event.target.value);
-    }
+  return (
+    <div className="Todolist">
+      <div className="Todolist__input">
+        <input
+          className="Todolist__inputfield"
+          type="text"
+          value={input}
+          placeholder="Add Items"
+          onChange={getInput}
+        ></input>
+      </div>
 
-      return (
-        <div className='Todolist'>
-            
-            <div className='Todolist__input'>
-               <input className="Todolist__inputfield" type="text" value={input} placeholder="Add Items" onChange={getInput}></input>
-            </div>
-             
-
-            <div className='Todolist__button'>
-                <button onClick={e=>{
-                    props.addlist(input)
-                    setinput("");
-                }} className='TodoList__button' >Add toDo</button>
-            </div>
-
-            
-
-        </div>
-      );
-    }
+      <div className="Todolist__button">
+        <button
+          onClick={(e) => {
+            props.addlist(input);
+            setinput("");
+          }}
+          className="TodoList__button"
+        >
+          Add toDo
+        </button>
+      </div>
+    </div>
+  );
+};
 
 export default TodoInput;
