@@ -1,8 +1,7 @@
 .App {
   text-align: center;
 }
-.main
-{
+.main {
   display: flex;
   justify-content: space-around;
 }
@@ -11,36 +10,35 @@
   pointer-events: none;
 }
 
-.component1{
-  margin-top:-80px;
-  margin-right:50px;
+.component1 {
+  margin-top: -80px;
+  margin-right: 50px;
 }
-.component2{
-  margin-top:-50px;
-  margin-left:60px;
+.component2 {
+  margin-top: -50px;
+  margin-left: 60px;
 }
-.label1{
-  margin-left:500px;
-  width:350px;
+.label1 {
+  margin-left: 500px;
+  width: 350px;
 }
-p{
-  font-size:15px;
-  color:black;
+p {
+  font-size: 15px;
+  color: black;
+}
+temp {
+  font-weight: bold;
+}
 
+.tasks {
+  display: flex;
 }
-temp{
-  font-weight:bold;
+.Input-state-props {
+  height: 250px;
 }
-
-.tasks{
-  display:flex;
-}
-.Input-state-props{
-   height:250px;
-}
-.Conditional-Rendering{
-  height:250px;
-  margin-left:50px;
+.Conditional-Rendering {
+  height: 250px;
+  margin-left: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -48,19 +46,19 @@ temp{
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.TodoListComponent{
-  width:350px;
+.TodoListComponent {
+  width: 350px;
 }
 
-.TodoList-label{
-  color:black;
+.TodoList-label {
+  color: black;
 }
-.line{
-  margin-left:20px;
-  margin-top:-20px;
+.line {
+  margin-left: 20px;
+  margin-top: -20px;
 }
 .App-header {
-  background-color: #F1F2F6;
+  background-color: #f1f2f6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
